@@ -1,5 +1,6 @@
 /**
  * Created by zaGamer on 2017-06-06.
+ * Edited by zaGamer on 2017-06-13
  */
 import java.io.File;
 import java.io.BufferedReader;
@@ -26,7 +27,6 @@ public class Main {
                 if (n > 0) rb.insert(n);
                 else if (n < 0){
                     n = Math.abs(n);
-                    //if(rb.search(rb.root,n)==null) System.out.println("Cannot delete "+n+": does not exist");
                     rb.delete(n);
                 } else if (n == 0) break;
             }
@@ -43,7 +43,7 @@ public class Main {
             rb.inorder(rb.root);
             System.out.println();
         }
-        }
+    }
 
     public static String onlyNum(String str) {
         if ( str == null ) return "";
